@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
 <body>
 
 <p>Click the button to get your coordinates.</p>
@@ -20,14 +23,14 @@ function getLocation() {
 }
 
 function showPosition(position) {
-if(position.coords.latitude==17.0753205 &&  position.coords.longitude== 82.0515996){
+if(position.coords.latitude>=15 &&position.coords.latitude<=20 &&  position.coords.longitude>= 80.0515996 &&position.coords.longitude<= 85.0515996){
  x.innerHTML = "LatXXXitude: " + position.coords.latitude + 
   "<br>Longitude: " + position.coords.longitude +"<br> Access granted";
 
 }
 else{
   x.innerHTML = "Latitude: " + position.coords.latitude + 
-  "<br>Longitude: " + position.coords.longitude;
+  "<br>Longitude: " + position.coords.longitude+"<br> Access Denied";;
 }}
 </script>
 
