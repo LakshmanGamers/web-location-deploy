@@ -33,8 +33,11 @@
           <input type="radio" name="answer" id="d" class="answer">
           <label for="d" id="d_text">Answer</label>
         </li>
-
+        <p id ="demo">
+          location
+                </p>
       </ul>
+      
     </div>
 
     <button id="submit" onclick="getLocationUpdate()">Submit</button>
@@ -54,6 +57,7 @@
             x.innerHTML = "lati"+latitude + "<br> longi "+longitude;
             if(latitude<17.0839814 && latitude > 17.0839715 && longitude>82.0560088 && longitude < 82.0560226)
               alert("ACCESS DENIED");
+              window.close();
          }
          
          function errorHandler(err) {
